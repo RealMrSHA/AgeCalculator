@@ -1,4 +1,3 @@
-
  <!DOCTYPE html>
  <html>
    <head>
@@ -14,16 +13,16 @@
 
       <form method="post" action="agecallculator.php">
         Enter your date of birth ,  in <strong>mm/dd/yyyy</strong> format <br> 
-      	<input type="text" name="dob" value=""><br> <br>
+      	<input type="text" name="do" value=""><br> <br>
        <input type="submit" name="submit" value="submit">
       </form>
 
       <?php
     }else {
           //if the form submit
-          //process from input
-          $d = $_POST['dob'];
-          $dataArr = explode('/', $d);
+          //processing from input
+          $d = $_POST['do'];
+          $dataArr = explode('/', $d); 
 
           //calculate time stamp corresponding data value
           $dataTs = strtotime($d);
@@ -48,7 +47,7 @@
         //calculate difference between date of birth  in days
         //convert to years
         // convert reamining days to months
-        //print output
+        //print your aoutput.
         $ageDays = floor(($now - $dataTs) / 86400);
         $ageYears = floor($ageDays / 365);
         $ageMonths = floor(($ageDays - ($ageYears * 365)) / 30 );
@@ -57,15 +56,6 @@
     }
 
      ?>
-
-
-
-
-
-
-
-
-
 
    </body>
  </html>
