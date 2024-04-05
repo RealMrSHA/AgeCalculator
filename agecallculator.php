@@ -7,7 +7,6 @@
        <input type="submit" name="submit" value="submit">
       </form>
 
-      <?php
     }else {
           $d = $_POST['do']; //post method to send some agecalculator action.
           $dataArr = explode('/', $d); 
@@ -15,7 +14,7 @@
           $now =  strtotime('today');
 
         if (sizeof($dataArr) != 3) { // size of method wwe can count some elements in our form's information.
-          die('Error: please enter valid dae of birth');
+          die('Error: please enter valid dae of birth');  // for know more die function an help us to print a message.
 
         }
       
