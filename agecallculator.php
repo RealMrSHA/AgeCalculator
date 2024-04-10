@@ -9,8 +9,8 @@
 
     }else {
           $d = $_POST['do']; //post method to send some agecalculator action.
-          $dataArr = explode('/', $d); 
-          $dataTs = strtotime($d);
+          $dataArr = explode('/', $d);  //date arry for put a value in input.
+          $dataTs = strtotime($d); 
           $now =  strtotime('today');
 
         if (sizeof($dataArr) != 3) { // size of method wwe can count some elements in our form's information.
