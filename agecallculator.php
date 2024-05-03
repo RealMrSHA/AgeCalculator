@@ -31,6 +31,13 @@
         $ageMonths = floor(($ageDays - ($ageYears * 365)) / 30 ); //then 365 day's devided by 30 day's in every month. 
         print "You are approximatelly $ageYears years and $ageMonths months  old";
 
+
+          // if () {
+          //      return true,
+          //           dd($_POST)
+          // }
+
+          
     }
 
      ?>
