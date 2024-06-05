@@ -26,9 +26,9 @@
           die('Error: please enter a date of birth earlier than today ');
         }
      
-        $ageDays = floor(($now - $dataTs) / 86400); // divided by all day's in every year.
-        $ageYears = floor($ageDays / 365); // devide by all day's in every year.
-        $ageMonths = floor(($ageDays - ($ageYears * 365)) / 30 ); //then 365 day's devided by 30 day's in every month. 
+        // $ageDays = floor(($now - $dataTs) / 86400); // divided by all day's in every year.
+        // $ageYears = floor($ageDays / 365); // devide by all day's in every year.
+        // $ageMonths = floor(($ageDays - ($ageYears * 365)) / 30 ); //then 365 day's devided by 30 day's in every month. 
         print "You are approximatelly $ageYears years and $ageMonths months  old";
 
 
